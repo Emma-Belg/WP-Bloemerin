@@ -1,0 +1,115 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+$primary: #7c2448; // Thats a sample how you could change a BootStrap variable.
+$dark_plum: #7c2448;
+$light_plum: #aa5b77;
+$pink: #f8b5b7;
+
+$dark_peach: #f8c9a3;
+$peach: #fcd4c1;
+$yellow_peach: #ffdcba;
+
+$dark_green: #425e42;
+$mute_green: #698276;
+
+$white: #fff;
+$black: #373637;
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.top-header {
+  //height: 135px;
+  display: flex;
+  align-items: center;
+  // background-image: url(../img/headers/cupcakes-black.jpg);
+  background-image: url(../../img/headers/cupcakes-black.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .top-header-contact {
+	display: flex;
+	justify-content: flex-end;
+
+	a {
+	  display: inline-block;
+	  color: $peach;
+
+	  .fa {
+		font-size: 25px;
+		color: $primary;
+		padding: 1em 0.3em;
+	  }
+	}
+  }
+}
+
+#main-nav {
+  background: $dark_plum;
+  border-top: 1px solid $light_plum;
+  border-bottom: 1px solid $light_plum;
+
+  .mobile-menu-dropdown {
+	border: 1px solid red;
+	button {
+
+	}
+  }
+
+  .search-input-holder {
+	margin: -2px 0;
+	border: 2px solid $primary;
+	border-radius: 6px;
+	background: white;
+	width: 350px;
+	display: flex;
+	.title{
+	  padding: 8px 12px;
+	  color: $primary;
+	}
+	input {
+	  padding: 0 0 0 10px;
+	  flex: 1;
+	  outline: none;
+	  border: none;
+	  border-left: 2px solid $primary;
+	  border-bottom-right-radius: 6px;
+	  border-top-right-radius: 6px;
+	  &::placeholder{
+		color: $black;
+	  }
+	}
+  }
+
+  #main-menu {
+	li {
+	  a {
+		font-size: 16px;
+		font-weight: lighter;
+		text-transform: uppercase;
+		color: white;
+		padding: 0 15px;
+	  }
+	  &.current-menu-item {
+		a{
+		  color: $pink;
+		  font-weight: normal;
+		}
+	  }
+	  .dropdown-menu {
+		background: $light_plum;
+		li {
+		  a {
+			&:hover{
+			  background: $pink;
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
