@@ -20,30 +20,88 @@ if (is_front_page()) {
 
 	<div class="home-hero-banner-top">
 		<div class="container">
-<!--			<div class="row align-items-center">
-				<div class="col-lg-8">
-					<div class="info-holder">
-						<div class="title">
-							<i class="fa fa-globe"></i>Baking across the globe
-						</div>
-						<div class="description">
-							Hi, I am Erin. I love baking and I have been collecting inspiration from across the four different continents have lived and baked in. I can't wait to share all that have I learnt with you.
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-				</div>
-			</div>-->
+			<!--			<div class="row align-items-center">
+							<div class="col-lg-8">
+								<div class="info-holder">
+									<div class="title">
+										<i class="fa fa-globe"></i>Baking across the globe
+									</div>
+									<div class="description">
+										Hi, I am Erin. I love baking and I have been collecting inspiration from across the four different continents have lived and baked in. I can't wait to share all that have I learnt with you.
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+							</div>
+						</div>-->
 		</div>
 		<div class="quote-holder">
-			<img class="flour-img-wide" alt="life is better with flour in it" src="<?php echo get_template_directory_uri(); ?>/img/LifeIsBetterNoWords-Xwide.png">
+			<img class="flour-img-wide" alt="life is better with flour in it"
+				 src="<?php echo get_template_directory_uri(); ?>/img/LifeIsBetterNoWords-Xwide.png">
 			<div class="bloemerin-quote">
-				<p class="dutch">Leven is beter met bloem erin.</p>
+				<p class="dutch">Leven is beter met bloemerin.</p>
 			</div>
 			<div class="bloemerin-quote">
 				<p class="english">Life is better with flour in it.</p>
 			</div>
 		</div>
+
+		<br />
+		<div class="home-carousel">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100"
+							 src="<?php echo get_template_directory_uri(); ?>/img/recipes/david-holifield-kPxsqUGneXQ-unsplash.jpg"
+							 alt="First slide">
+						<div class="carousel-caption d-md-block">
+							<h5>Super Chocolate Cake</h5>
+							<p>filler text about the Super Chocolate Cake...</p>
+							<a href="#" class="btn btn-primary">See Recipe</a>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100"
+							 src="<?php echo get_template_directory_uri(); ?>/img/recipes/mike-meeks-zk-fclJdGas-unsplash.jpg"
+							 alt="Second slide">
+						<div class="carousel-caption d-md-block">
+							<h5>Cupcakes</h5>
+							<p>filler text about Cupcakes...</p>
+							<a href="#" class="btn btn-primary">See Recipe</a>
+						</div>
+						<!--					<img class="d-block w-100" src="img/recipes/mike-meeks-zk-fclJdGas-unsplash.jpg" alt="Second slide">-->
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100"
+							 src="<?php echo get_template_directory_uri(); ?>/img/recipes/david-holifield-sCsjtUwN8LA-unsplash.jpg"
+							 alt="Third slide">
+						<div class="carousel-caption d-md-block">
+							<h5>Wedding Cake</h5>
+							<p>filler text about a wedding cake...</p>
+							<a href="#" class="btn btn-primary">See Recipe</a>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="quote-holder">
+		<img class="flour-img-wide-below" alt="life is better with flour in it"
+			 src="<?php echo get_template_directory_uri(); ?>/img/LifeIsBetterNoWords-Xwide.png">
 	</div>
 
 <?php
