@@ -172,3 +172,99 @@ body {
 	}
   }
 }
+
+
+// HOME PAGE ----------------------------------------
+
+.home-hero-banner-top {
+  margin-top: 80px;
+  .info-holder{
+	border: 3px dashed $primary;
+	border-radius: 15px;
+	padding: 30px;
+	color: $primary;
+	.fa{
+	  padding-right: 0.5em;
+	}
+	.title {
+	  font-size: 30px;
+	  font-weight: bold;
+	  //text-shadow: $black;
+	}
+	.description {
+	  font-size: 20px;
+	  font-weight: 300;
+	}
+  }
+}
+
+.quote-holder {
+  position: relative;
+}
+.flour-img-wide {
+  position: absolute;
+  z-index: -100;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,-50%);
+  @media (min-width:$xl) {
+	width: 1822px;
+	height:190px;
+	object-fit: cover;
+	object-position: 0 100%;
+  }
+  @media (min-width:$lg) {
+	width: 1422px;
+	height:190px;
+	object-fit: cover;
+	object-position: 0 100%;
+  }
+}
+
+@keyframes bloemerinQuote {
+  0% {opacity: 0;}
+  10% {opacity: 100%;}
+  40% {opacity: 100%;}
+  50% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes bloemerinEnglishQuote {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  60% {opacity: 100%;}
+  90% {opacity: 100%;}
+  100% {opacity: 0;}
+}
+.dutch {
+  animation-name: bloemerinQuote;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.english {
+  opacity: 0;
+  animation-name: bloemerinEnglishQuote;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.bloemerin-quote {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,-50%);
+  z-index: 100;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: $primary;
+  @media (max-width:$lg) {
+	font-size: 35px;
+  }
+  @media (max-width:$md) {
+	font-size: 30px;
+  }
+  @media (max-width:$sm) {
+	font-size: 25px;
+  }
+}
+
