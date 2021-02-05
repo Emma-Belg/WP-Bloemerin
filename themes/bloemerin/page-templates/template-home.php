@@ -19,34 +19,6 @@ if (is_front_page()) {
 ?>
 
 	<div class="home-hero-banner-top">
-		<div class="container">
-			<!--			<div class="row align-items-center">
-							<div class="col-lg-8">
-								<div class="info-holder">
-									<div class="title">
-										<i class="fa fa-globe"></i>Baking across the globe
-									</div>
-									<div class="description">
-										Hi, I am Erin. I love baking and I have been collecting inspiration from across the four different continents have lived and baked in. I can't wait to share all that have I learnt with you.
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4">
-							</div>
-						</div>-->
-		</div>
-		<div class="quote-holder">
-			<img class="flour-img-wide" alt="life is better with flour in it"
-				 src="<?php echo get_template_directory_uri(); ?>/img/LifeIsBetterNoWords-Xwide.png">
-			<div class="bloemerin-quote">
-				<p class="dutch">Leven is beter met bloemerin.</p>
-			</div>
-			<div class="bloemerin-quote">
-				<p class="english">Life is better with flour in it.</p>
-			</div>
-		</div>
-
-		<br />
 		<div class="home-carousel">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -97,11 +69,75 @@ if (is_front_page()) {
 				</a>
 			</div>
 		</div>
+
+		<div class="quote-holder">
+			<img class="flour-img-wide" alt="life is better with flour in it"
+				 src="<?php echo get_template_directory_uri(); ?>/img/LifeIsBetterNoWords-Xwide.png">
+			<div class="bloemerin-quote">
+				<p class="dutch">Leven is beter met Bloemerin.</p>
+			</div>
+			<div class="bloemerin-quote">
+				<p class="english">Life is better with flour in it.</p>
+			</div>
+		</div>
+
+		<div class="quote-holder">
+			<div class="home-product-info-background-underlay">
+				<div class="container">
+					<div class="home-special-offer">
+						<div class="bloemerin-quote">
+							<p class="dutch">Leven is beter met Bloemerin.</p>
+						</div>
+						<div class="bloemerin-quote">
+							<p class="english">Life is better with flour in it.</p>
+						</div>
+					</div>
+					<img class="illustration-to-invert" src="<?php echo get_template_directory_uri(); ?>/img/flourishIllustrations/baking-ingredients-32002_1280.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="info-holder-background-underlay">
+			<div class="container-info">
+				<div class="info-holder">
+					<div class="title">
+						<i class="fa fa-globe"></i>Baking across the globe
+					</div>
+					<div class="description">
+						Hi, I am Erin. I love baking and I have been collecting inspiration from across the four
+						different continents have lived and baked in. I can't wait to share all that have I learnt
+						with you.
+						<br/>
+						<a href="#" class="btn btn-secondary">Baking Abroad</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="quote-holder">
-		<img class="flour-img-wide-below" alt="life is better with flour in it"
-			 src="<?php echo get_template_directory_uri(); ?>/img/LifeIsBetterNoWords-Xwide.png">
+	<div class="home-product-info">
+		<div class="home-product-info-background-underlay">
+			<div class="container">
+				<div class="home-special-offer">
+					<div class="discount-circle">
+						<div class="save">
+							Want
+							<div class="highlight-word">
+								Erin's Baking in
+							</div>
+							your inbox?
+						</div>
+					</div>
+					<div class="entry-content">
+						<div class="title">Sign up to the newsletter</div>
+						<div class="desc">Get delicious baking recipes in your inbox once a month... More info maybe not sure...
+							just filler text
+						</div>
+						<a href="#" class="button"></a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 <?php
