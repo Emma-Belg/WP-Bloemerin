@@ -70,31 +70,31 @@ if (is_front_page()) {
 			</div>
 		</div>
 
-		<div class="quote-holder">
-			<img class="flour-img-wide" alt="life is better with flour in it"
-				 src="<?php echo get_template_directory_uri(); ?>/img/LifeIsBetterNoWords-Xwide.png">
-			<div class="bloemerin-quote">
-				<p class="dutch">Leven is beter met Bloemerin.</p>
-			</div>
-			<div class="bloemerin-quote">
-				<p class="english">Life is better with flour in it.</p>
-			</div>
-		</div>
+		<!--		<div class="quote-holder">-->
+		<!--			<img class="flour-img-wide" alt="life is better with flour in it"-->
+		<!--				 src="-->
+		<?php //echo get_template_directory_uri(); ?><!--/img/LifeIsBetterNoWords-Xwide.png">-->
+		<!--			<div class="bloemerin-quote">-->
+		<!--				<p class="dutch">Leven is beter met Bloemerin.</p>-->
+		<!--			</div>-->
+		<!--			<div class="bloemerin-quote">-->
+		<!--				<p class="english">Life is better with flour in it.</p>-->
+		<!--			</div>-->
+		<!--		</div>-->
 
 		<div class="quote-holder">
-			<div class="home-product-info-background-underlay">
-				<div class="container">
-					<div class="home-special-offer">
-						<div class="bloemerin-quote">
-							<p class="dutch">Leven is beter met Bloemerin.</p>
-						</div>
-						<div class="bloemerin-quote">
-							<p class="english">Life is better with flour in it.</p>
-						</div>
-					</div>
-					<img class="illustration-to-invert" src="<?php echo get_template_directory_uri(); ?>/img/flourishIllustrations/baking-ingredients-32002_1280.png">
+
+				<div class="bloemerin-quote">
+					<p class="dutch">Leven is beter met Bloemerin.</p>
 				</div>
-			</div>
+				<div class="bloemerin-quote">
+					<p class="english">Life is better with flour in it.</p>
+				</div>
+
+					<img class="illustration-to-invert"
+						 src="<?php echo get_template_directory_uri(); ?>/img/flourishIllustrations/baking-ingredients-32002_1280.png"
+						 alt="baking illustration"
+					>
 		</div>
 
 		<div class="info-holder-background-underlay">
@@ -130,7 +130,8 @@ if (is_front_page()) {
 					</div>
 					<div class="entry-content">
 						<div class="title">Sign up to the newsletter</div>
-						<div class="desc">Get delicious baking recipes in your inbox once a month... More info maybe not sure...
+						<div class="desc">Get delicious baking recipes in your inbox once a month... More info maybe not
+							sure...
 							just filler text
 						</div>
 						<a href="#" class="button"></a>

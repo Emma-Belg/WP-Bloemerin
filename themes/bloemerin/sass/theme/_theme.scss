@@ -41,10 +41,7 @@ body {
 	background-color: $primary;
   }
 }*/
-//.illustration-to-invert {
-//  filter: invert(100%);
-//  background: black;
-//}
+
 .top-header {
   display: flex;
   align-items: center;
@@ -219,39 +216,70 @@ body {
   }
   .quote-holder {
 	position: relative;
-	margin-top: 70px;
-	background: $light_plum;
-	width: 100%;
-	height: 80px;
-	z-index: -100;
-	//transform: translate(0, 50%);
-	.flour-img-wide {
-	  margin-top: 35px;
-	  position: absolute;
-	  width: 80%;
-	  border-radius: 20px;
-	  //width: 100%;
-	  z-index: -50;
-	  left: 50%;
-	  transform: translate(-50%, 0);
-	  -webkit-transform: translate(-50%,-50%);
+	margin-top: 5vh;
+	background: $peach;
+	width: 90%;
+	height: 150px;
+	border-radius: 20px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%,-50%);
+	@media (min-width:$xl) {
+	  height:160px;
+	  object-position: 0 100%;
+	}
+	@media (max-width:$lg) {
+	  height:130px;
+	  object-position: 50% 100%;
+	}
+	@media (max-width:$md) {
+	  height:100px;
+	  width: 100%;
+	  border-radius: 0;
+	  object-position: 50% 100%;
+	}
+	.illustration-to-invert {
+	  margin-top: -10vh;
+	  filter: invert(100%);
+	  -webkit-filter: invert(100%);
+	  //left: 50%;
 	  @media (min-width:$xl) {
-		height:160px;
-		object-fit: cover;
-		object-position: 0 100%;
-	  }
-	  @media (max-width:$lg) {
-		height:130px;
-		object-fit: cover;
-		object-position: 50% 100%;
+		margin-top: -15vh;
+		transform: translate(3vw, 0);
+		-webkit-transform: translate(3vw,0);
 	  }
 	  @media (max-width:$md) {
-		height:100px;
-		width: 90%;
-		object-fit: cover;
-		object-position: 50% 100%;
+		margin-top: -8vh;
+	  }
+	  @media (max-width:$sm) {
+		margin-top: -3vh;
 	  }
 	}
+
+	.bloemerin-quote {
+	  position: absolute;
+	  padding: 0;
+	  left: 50%;
+	  top: 50%;
+	  transform: translate(-50%, -50%);
+	  -webkit-transform: translate(-50%, -50%);
+	  z-index: 100;
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 40px;
+	  text-align: center;
+	  color: $primary;
+	  @media (max-width:$lg) {
+		font-size: 35px;
+	  }
+	  @media (max-width:$md) {
+		font-size: 30px;
+	  }
+	  @media (max-width:$sm) {
+		font-size: 25px;
+	  }
+	}
+
+	//quote alternating animations
 	@keyframes bloemerinQuote {
 	  0% {opacity: 0;}
 	  10% {opacity: 100%;}
@@ -276,27 +304,6 @@ body {
 	  animation-name: bloemerinEnglishQuote;
 	  animation-duration: 10s;
 	  animation-iteration-count: infinite;
-	}
-	.bloemerin-quote {
-	  position: absolute;
-	  margin-top: 35px;
-	  left: 50%;
-	  transform: translate(-50%, 0);
-	  -webkit-transform: translate(-50%,-50%);
-	  z-index: 100;
-	  font-family: 'Dancing Script', cursive;
-	  font-size: 40px;
-	  text-align: center;
-	  color: $primary;
-	  @media (max-width:$lg) {
-		font-size: 35px;
-	  }
-	  @media (max-width:$md) {
-		font-size: 30px;
-	  }
-	  @media (max-width:$sm) {
-		font-size: 25px;
-	  }
 	}
   }
 
@@ -366,46 +373,46 @@ body {
 	  align-items: center;
 	  @media (max-width: $md) {
 		display: inline-flex;
-		height: 160px;
-		min-width: 160px;
+		height: 165px;
+		min-width: 165px;
 	  }
 	  .save {
-		font-size: 26px;
+		font-size: 28px;
 		font-weight: 600;
 		text-align: center;
-		@media (max-width: $xl) {
+		@media (max-width: $md) {
 		  font-size: 22px;
 		}
 	  }
 	  .highlight-word {
 		font-family: 'Dancing Script', cursive;
-		font-size: 32px;
+		font-size: 30px;
 		color: $primary;
-		@media (max-width: $xl) {
+		@media (max-width: $md) {
 		  font-size: 25px;
 		}
 	  }
 	}
 	.entry-content{
-	  padding-left: 30px;
+	  padding: 20px 0 15px 30px;
 	  color: white;
 	  @media (max-width: $md) {
 		padding-left: 0;
 	  }
 		.title {
-		  font-size: 35px;
+		  font-size: 38px;
 		  font-weight: 600;
 		  color: $peach;
 		  @media (max-width: $xl) {
 			font-size: 28px;
 		  }
 		}
-	  .description {
-		font-size: 25px;
+	  .desc {
+		font-size: 24px;
 		font-weight: 300;
-		margin: 30px 0;
-		@media (max-width: $xl) {
-		  font-size: 28px;
+		margin: 10px 0;
+		@media (max-width: $md) {
+		  font-size: 20px;
 		}
 	  }
 	}
