@@ -51,3 +51,11 @@ phpcs.xml
 dist/
 dist-product/
 **/img
+
+#paid fonts
+/css/typeface-moneypenny.css
+/fonts/moneypenny-script_1-webfont.eot
+/fonts/moneypenny-script_1-webfont.svg
+/fonts/moneypenny-script_1-webfont.ttf
+/fonts/moneypenny-script_1-webfont.woff
+
