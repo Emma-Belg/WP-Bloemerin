@@ -41,10 +41,13 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  min-height: 8000px;
   h1 {
 	font-family: 'money_pennyscript', cursive;
   }
+}
+
+.wrapper {
+  padding: 0;
 }
 
 //TODO: Rename all classes to make sense for this website
@@ -366,7 +369,6 @@ body {
 	  animation-iteration-count: infinite;
 	}
   }
-
 }
 
 .home-product-info {
@@ -607,6 +609,123 @@ body {
 		  font-size: 18px;
 		}
 	  }
+	}
+  }
+}
+
+
+// FOOTER --------------------------------------------
+
+
+#wrapper-footer {
+  padding-top: 80px;
+  @media (max-width: $md) {
+	padding-top: 30px;
+  }
+
+  .footer-testimonial {
+	text-align: center;
+	margin-bottom: 80px;
+	@media (max-width: $md) {
+	  margin-bottom: 30px;
+	}
+	.testimonial{
+	  @media (max-width: $md) {
+		padding: 0 10px
+	  }
+	  .stars{
+		color: $primary;
+		font-size: 32px;
+	  }
+	  .quote {
+		font-size: 22px;
+		margin-bottom: 15px;
+		@media (max-width: $md) {
+		  font-size: 18px;
+		}
+	  }
+	  .author {
+		color: $primary;
+	  }
+	}
+  }
+
+  .footer-contact-info {
+	background:	$secondary;
+	padding: 30px 50px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	color: white;
+	@media (max-width: $lg) {
+	  padding: 20px 35px;
+	}
+	.title {
+	  font-size: 26px;
+	  font-weight: bold;
+	  @media (max-width: $md) {
+		font-size: 22px;
+	  }
+	}
+	.description{
+	  font-size: 20px;
+	  font-weight: 400;
+	  margin: 30px 0;
+	  @media (max-width: $md) {
+		font-size: 18px;
+		margin: 10px 0;
+	  }
+	}
+	.contact-info {
+	  font-size: 20px;
+	  margin-bottom: 0.5em;
+	  @media (max-width: $md) {
+		font-size: 18px;
+		margin: 10px 0;
+	  }
+	  .fa {
+		min-width: 1.5em;
+	  }
+	}
+	.form-group	{
+	  margin: 0;
+	}
+	.contact-form-holder {
+	  background: $black;
+	  padding: 10px 30px;
+	  border-radius: 20px;
+	  @media (max-width: $lg) {
+		margin-top: 20px;
+	  }
+	  input, textarea {
+		border-radius: 8px;
+		margin-bottom: 5px;
+		font-size: 15px;
+		height: auto;
+		border: none;
+		outline: none;
+		&[type="submit"] {
+		  margin-top: 5px;
+		  display: inline-block;
+		  background: $peach;
+		  color: $black;
+		}
+	  }
+	  label {
+		font-size: 15px;
+	  }
+	}
+  }
+
+  .copyright {
+	background: $peach;
+	padding: 20px;
+	text-align: center;
+	a {
+	  color: $primary;
+	}
+	span {
+	  color: white;
+	  margin: 0 1em;
 	}
   }
 }
