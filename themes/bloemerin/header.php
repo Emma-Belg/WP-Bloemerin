@@ -49,7 +49,14 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="col-lg-7 col-md-5">
 						<div class="top-header-contact">
 							<div class="mobile-menu-dropdown-small">
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>">
+								<button class="navbar-toggler"
+										type="button"
+										data-toggle="collapse"
+										data-target="#navbarNavDropdown"
+										aria-controls="navbarNavDropdown"
+										aria-expanded="false"
+										aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>"
+								>
 									<span>Menu</span> <i class="fa fa-bars"></i>
 								</button>
 							</div>

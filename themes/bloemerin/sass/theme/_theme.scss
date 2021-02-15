@@ -41,6 +41,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+
   h1 {
 	font-family: 'money_pennyscript', cursive;
   }
@@ -65,6 +66,7 @@ body {
   }
 }*/
 
+// HEADER AND NAVIGATION FOR ALL PAGES
 .top-header {
   display: flex;
   align-items: center;
@@ -225,6 +227,79 @@ body {
   }
 }
 
+// GENERAL PAGE HEADER
+
+.page-header-holder {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  @media(max-width:$md){
+	margin-top: 50px;
+	margin-bottom: 20px;
+  }
+  h1 {
+	font-size: 60px;
+	color: $primary;
+  }
+}
+
+
+// GENERAL PAGE CONTENT
+.entry-content {
+  //margin-right: 20px;
+}
+
+#main {
+  .entry-content {
+	h2 {
+	  margin-top: 1.25em;
+	  margin-bottom: 0.3em;
+	  color: $primary;
+	  font-size: 34px;
+	}
+	h3 {
+	  margin-top: 1.2em;
+	  margin-bottom: 0.2em;
+	  color: $secondary;
+	  font-size: 30px;
+	}
+
+	ul {
+	  list-style: none;
+	  margin: 0 0 1em 0;
+	  padding: 0;
+	  li {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		font-weight: 300;
+		&:before {
+		  content: "\f111";
+		  display: inline-block;
+		  font-family: FontAwesome;
+		  margin-right: 1em;
+		  color: $secondary;
+		  font-size: 10px;
+		}
+	  }
+	  ul {
+		li {
+		  margin-left: 1em;
+		  padding: 0;
+		  font-size: 18px;
+		  font-weight: 300;
+
+		  &:before {
+			content: "\f111";
+			display: inline-block;
+			font-family: FontAwesome;
+			margin-right: 1em;
+			color: $pink;
+		  }
+		}
+	  }
+	}
+  }
+}
 
 // HOME PAGE ----------------------------------------
 
@@ -250,6 +325,7 @@ body {
 	  opacity: 80%;
 	}
   }
+
   .quote-holder {
 	position: relative;
 	//margin-top: 5vh;
@@ -405,9 +481,11 @@ body {
 		.content {
 
 		}
-		.tags{
+
+		.tags {
 		  display: flex;
 		  flex-wrap: wrap;
+
 		  .tag {
 			margin: 10px 10px 0 0;
 			padding: 5px 8px;
@@ -436,8 +514,10 @@ body {
 
   .home-we-accept {
 	margin-top: 70px;
-	.title-holder{
+
+	.title-holder {
 	  display: flex;
+
 	  h2 {
 		flex: 1;
 		font-size: 44px;
@@ -448,15 +528,19 @@ body {
 		  font-size: 30px;
 		}
 	  }
+
 	  .button-holder {
 		margin-bottom: 30px;
+
 		.button {
 
 		}
 	  }
 	}
+
 	.circle {
 	  margin: 15px 0;
+
 	  .title {
 		font-size: 20px;
 		font-weight: bold;
@@ -464,6 +548,7 @@ body {
 		color: $black;
 		margin-top: 10px;
 	  }
+
 	  img {
 		height: 280px;
 		object-fit: cover;
@@ -477,6 +562,7 @@ body {
   background: $primary;
   opacity: 50%;
   margin: -20px 0;
+
   .info-holder {
 	margin: 30px;
 	padding: 20px;
@@ -629,14 +715,17 @@ body {
 	@media (max-width: $md) {
 	  margin-bottom: 30px;
 	}
-	.testimonial{
+
+	.testimonial {
 	  @media (max-width: $md) {
 		padding: 0 10px
 	  }
-	  .stars{
+
+	  .stars {
 		color: $primary;
 		font-size: 32px;
 	  }
+
 	  .quote {
 		font-size: 22px;
 		margin-bottom: 15px;
@@ -644,6 +733,7 @@ body {
 		  font-size: 18px;
 		}
 	  }
+
 	  .author {
 		color: $primary;
 	  }
@@ -651,7 +741,7 @@ body {
   }
 
   .footer-contact-info {
-	background:	$secondary;
+	background: $secondary;
 	padding: 30px 50px;
 	margin-bottom: 20px;
 	border-radius: 20px;
@@ -659,6 +749,7 @@ body {
 	@media (max-width: $lg) {
 	  padding: 20px 35px;
 	}
+
 	.title {
 	  font-size: 26px;
 	  font-weight: bold;
@@ -666,7 +757,8 @@ body {
 		font-size: 22px;
 	  }
 	}
-	.description{
+
+	.description {
 	  font-size: 20px;
 	  font-weight: 400;
 	  margin: 30px 0;
@@ -675,6 +767,7 @@ body {
 		margin: 10px 0;
 	  }
 	}
+
 	.contact-info {
 	  font-size: 20px;
 	  margin-bottom: 0.5em;
@@ -682,13 +775,16 @@ body {
 		font-size: 18px;
 		margin: 10px 0;
 	  }
+
 	  .fa {
 		min-width: 1.5em;
 	  }
 	}
-	.form-group	{
+
+	.form-group {
 	  margin: 0;
 	}
+
 	.contact-form-holder {
 	  background: $black;
 	  padding: 10px 30px;
@@ -696,6 +792,7 @@ body {
 	  @media (max-width: $lg) {
 		margin-top: 20px;
 	  }
+
 	  input, textarea {
 		border-radius: 8px;
 		margin-bottom: 5px;
@@ -703,6 +800,7 @@ body {
 		height: auto;
 		border: none;
 		outline: none;
+
 		&[type="submit"] {
 		  margin-top: 5px;
 		  display: inline-block;
@@ -710,6 +808,7 @@ body {
 		  color: $black;
 		}
 	  }
+
 	  label {
 		font-size: 15px;
 	  }
@@ -720,12 +819,77 @@ body {
 	background: $peach;
 	padding: 20px;
 	text-align: center;
+
 	a {
 	  color: $primary;
 	}
+
 	span {
 	  color: white;
 	  margin: 0 1em;
+	}
+  }
+}
+
+
+// SIDEBAR -- RIGHT HAND SIDE --------------------------
+
+.right-sidebar-promotion {
+  padding: 20px;
+  position: relative;
+  z-index: 100;
+  background: $peach;
+  border-radius: 15px;
+  @media (max-width: $md) {
+	display: block;
+	text-align: center;
+  }
+
+  img {
+	margin: auto;
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	object-fit: cover;
+	border-radius: 50%;
+  }
+
+	.absolute-holder {
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+  .entry-content {
+	padding: 10px;
+	color: white;
+	@media (max-width: $md) {
+	  padding-left: 0;
+	}
+
+	.title {
+	  font-size: 30px;
+	  font-weight: 600;
+	  color: white;
+	  @media (max-width: $xl) {
+		font-size: 24px;
+	  }
+	}
+
+	.desc {
+	  font-size: 18px;
+	  font-weight: 300;
+	  margin: 10px 0;
+	  color: $secondary;
+	  @media (max-width: $md) {
+		font-size: 14px;
+	  }
 	}
   }
 }

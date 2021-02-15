@@ -11,11 +11,11 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-	</header><!-- .entry-header -->
+<!--	This header was removed from here and placed into the page.php instead in the tutorial. I'm not sure why.-->
+<!--	<header class="entry-header">-->
+<!--		--><?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+<!--	</header>-->
+	<!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 

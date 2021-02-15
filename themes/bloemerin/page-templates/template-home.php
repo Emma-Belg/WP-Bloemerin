@@ -122,13 +122,13 @@ if (is_front_page()) {
 					</div>
 					<div class="home-product">
 						<div class="row">
-							<div class="col-lg-4">
+							<div class="col-lg-5">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/recipes/david-holifield-kPxsqUGneXQ-unsplash.jpg"
 									 alt="cake"
 									 width="100%"
 								>
 							</div>
-							<div class="col-lg-8">
+							<div class="col-lg-7">
 								<div class="title">Super Chocolate Cake</div>
 								<div class="content">This will be the first part of the blog that will be copied over in
 									here as an introduction to the recipe. More filler text will go until at some point
@@ -149,13 +149,13 @@ if (is_front_page()) {
 					</div>
 					<div class="home-product">
 						<div class="row">
-							<div class="col-lg-4">
+							<div class="col-lg-5">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/recipes/david-holifield-kPxsqUGneXQ-unsplash.jpg"
 									 alt="cake"
 									 width="100%"
 								>
 							</div>
-							<div class="col-lg-8">
+							<div class="col-lg-7">
 								<div class="title">Super Chocolate Cake</div>
 								<div class="content">This will be the first part of the blog that will be copied over in
 									here as an introduction to the recipe. More filler text will go until at some point
