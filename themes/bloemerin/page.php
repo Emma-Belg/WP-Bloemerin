@@ -34,7 +34,6 @@ $container = get_theme_mod('understrap_container_type');
 
 			<div class="row">
 
-
 				<!-- Do the left sidebar check -->
 				<!--			--><?php //get_template_part( 'global-templates/left-sidebar-check' ); ?>
 				<!-- My own area for the main content-->
